@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Open Sans Condensed"; 
+    src: url("../webfonts/OpenSansCondensed-Bold.ttf") format("truetype"); 
+    font-style: normal;  
+} 
+    
 * {
-    font-family: "open-sans", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,6 +18,32 @@ body {
 
 .container {
     margin: 0 170px;
+}
+
+.btn-regstration {
+    padding: 12px 24px;
+    border: 2px solid #DE2E54;
+    outline: none;
+    border-radius: 8px;
+    background-color: #DE2E54;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HOVER HOLATI */
+.btn-regstration:hover {
+    color:#DE2E54;
+    background-color: transparent;
+    border-color: #DE2E54;
+}
+
+/* ACTIVE HOLATI */
+.btn-regstration:active {
+    color: #fff;
+    background-color: #DE2E54;
+    opacity: 0.6;
 }
 
 .site-header {
@@ -68,32 +100,6 @@ body {
     opacity: 0.6;
 }
 
-.button .site-header-btn {
-    padding: 12px 24px;
-    border: 2px solid #DE2E54;
-    outline: none;
-    border-radius: 8px;
-    background-color: #DE2E54;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* HOVER HOLATI */
-.button .site-header-btn:hover {
-    color:#DE2E54;
-    background-color: transparent;
-    border-color: #DE2E54;
-}
-
-/* ACTIVE HOLATI */
-.button .site-header-btn:active {
-    color: #fff;
-    background-color: #DE2E54;
-    opacity: 0.6;
-}
-
 .hero {
     background: #0EB4C1;
 }
@@ -106,12 +112,13 @@ body {
 
 .hero-content h1 {
     color: #fff;
-    font-family: "Open-Sans", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 
 .hero-content p {
     width: 400px;
-    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -128,6 +135,181 @@ body {
     margin-top: 36px;
 }
 
+.hero-btn:hover {
+    color:#DE2E54;
+    background-color: transparent;
+    border-color: #DE2E54;
+}
+
 .hero-section .hero-img {
     margin-top: 29px;
+}
+.services .services-heading {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.services .services-group {
+    padding: 56px 50px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .services-group .item {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.services-group .item h2 {
+   font-family: "Open Sans Condensad", sans-serif;
+}
+
+.services-group .item .frame {
+    margin-left: 64px;
+}
+
+.services-group .item .frame p {
+    width: 500px;
+    margin-top: 24px;
+    font-family: "open sans", sans-serif;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.item .item-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+}
+
+.btn-new {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cta {
+    background-color: #0EB4C1;
+    padding: 0 326px;
+}
+
+.cta .regstration h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.cta .btn-group {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding-bottom: 64px;
+}
+
+.btn-group .call-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* HOVER HOLATI */
+.btn-group .call-btn:hover {
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+}
+
+/* ACTIVE HOLATI */
+.btn-group .call-btn:active {
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+    opacity: 0.8;
+}
+
+.btn-group .send-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+
+/* HOVER HOLATI */
+.btn-group .send-btn:hover {
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+}
+
+
+/* ACTIVE HOLATI */
+.btn-group .send-btn:active {
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #000;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-group .logo-footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-family: Open-Sans;
+    font-size: 24px;
+}
+
+.footer-group .logo-footer:active {
+    opacity: 0.6;
+}
+
+.footer-group .logo-footer span:hover {
+    color: #DE2E54;
+}
+
+.footer-group .logo-footer span {
+    color: #fff;
+    margin-left: 16px;
+}
+
+.sitefooter .navbar {
+    margin-top: 22px;
+}
+
+.sitefooter .navbar .item {
+    color: #fff;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* HOVER HOLATI */
+.sitefooter .navbar .item:hover {
+    color: #DE2E54;
+}
+
+.sitefooter .navbar .item:active {
+    color: #fff;
+    opacity: 0.6;
 }
