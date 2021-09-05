@@ -27,6 +27,17 @@ body {
     align-items: center;
 }
 
+
+/* LOGO HOVER HOLATI */
+.logo:hover {
+    color: #DE2E54;
+}
+
+/* LOGO ACTIVE HOLATI */
+.logo:active {
+    opacity: 0.6;
+}
+
 .logo span {
     margin-left: 16px;
     font-size: 24px;
@@ -48,6 +59,15 @@ body {
     font-weight: bold;
 }
 
+/* NAVBAR HOVER */
+.navbar li .item:hover {
+    color: #DE2E54;
+}
+/* NAVBAR ACIIVE */
+.navbar li .item:active {
+    opacity: 0.6;
+}
+
 .button .site-header-btn {
     padding: 12px 24px;
     border: 2px solid #DE2E54;
@@ -58,4 +78,56 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* HOVER HOLATI */
+.button .site-header-btn:hover {
+    color:#DE2E54;
+    background-color: transparent;
+    border-color: #DE2E54;
+}
+
+/* ACTIVE HOLATI */
+.button .site-header-btn:active {
+    color: #fff;
+    background-color: #DE2E54;
+    opacity: 0.6;
+}
+
+.hero {
+    background: #0EB4C1;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-family: "Open-Sans", sans-serif;
+}
+
+.hero-content p {
+    width: 400px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    border: 2px solid #DE2E54;
+    outline: none;
+    border-radius: 8px;
+    background-color: #DE2E54;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 36px;
+}
+
+.hero-section .hero-img {
+    margin-top: 29px;
 }
